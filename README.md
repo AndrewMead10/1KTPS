@@ -2,6 +2,8 @@
 
 The goal of this project is to research different ways of speeding up LLM inference, and then packaging up the best ideas into a library of methods people can use for their own models, as well as provide optimized models that people can use directly.
 
+Interested in helping contribute to the project? Check out our [Discord](https://discord.gg/nnYPKqb5mS) for an up-to-date look at what we are working on.
+
 # Current Work
 - Baseline benchmarks
 - Evaluation framework
