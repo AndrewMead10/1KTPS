@@ -50,9 +50,6 @@ def sparse_gpt(W, p, B=64, Bs=2, lam=3):
             W[:, j:i+B] -= E_block * H_inv_block
 
         # Update remaining weights
-        # print(f'W: {W[:, i+B:].shape}')
-        # print(f'E: {E.shape}')
-        # print(f'H: {H_inv_chol[i:i+B, i+B:].shape}')
         W[:, i+B:] -= (E @ H_inv_chol[i:i+B, i+B:])
 
     # Set pruned weights to zero
